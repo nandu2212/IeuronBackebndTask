@@ -6,6 +6,7 @@ const BookModal=require('./model/BOOKS')
 const addController=require('./Routes/ADD')
 const getController=require('./Routes/GET')
 const deletionController=require('./Routes/delete')
+const updateController=require('./Routes/update')
 //creating port
 app.listen(3005,()=>{
     console.log('connected to port')
@@ -28,3 +29,4 @@ mongoose.connect("mongodb+srv://chinni:chinni@cluster0.6dkm45w.mongodb.net/?retr
 app.use('/ADD',addController)
 app.use('/GET',getController)
 app.use('/DELETE',deletionController)
+app.use('/UPDATE',updateController)
