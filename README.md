@@ -10,3 +10,6 @@ sorting the entries on the names,author name,price
 //delete
  2 criterias 
  by id and another by (name&author)
+ 
+ //images
+ contains all the postman results
