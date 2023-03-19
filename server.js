@@ -4,6 +4,7 @@ const app=express();
 
 const BookModal=require('./model/BOOKS')
 const addController=require('./Routes/ADD')
+const getController=require('./Routes/GET')
 //creating port
 app.listen(3005,()=>{
     console.log('connected to port')
@@ -24,3 +25,4 @@ mongoose.connect("mongodb+srv://chinni:chinni@cluster0.6dkm45w.mongodb.net/?retr
 })
 //middle ware
 app.use('/ADD',addController)
+app.use('/GET',getController)
